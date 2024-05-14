@@ -1,27 +1,22 @@
-// C++ program for the above approach 
+#include <stdio.h>
 
-#include "bits/stdc++.h" 
-using namespace std; 
 
-// Function that prints the 
-// value of pi 
-void printValueOfPi() 
-{ 
+int main() {
+    double divisor = 1;
+    double result = 0;
 
-	// Find value of pi using 
-	// acos() function 
-	double pi = 2 * acos(0.0); 
+    for (int i = 0; i < 1000000000; i++) {
 
-	// Print value of pi 
-	printf("%f\n", pi); 
+            double sub_result = 4 / divisor;
+
+            if (i % 2 == 0) {
+                result = result + sub_result;
+            } 
+            else {
+                result = result - sub_result;
+            }
+
+            divisor += 2;
+    }
+    printf("%0.100f\n", result);
 } 
-
-// Driver Code 
-int main() 
-{ 
-	// Function that prints 
-	// the value of pi 
-	printValueOfPi(); 
-	return 0; 
-} 
-
