@@ -1,3 +1,4 @@
+import decimal
 
 divisor = 1
 result = 0
@@ -12,4 +13,4 @@ for i in range(0, 1000000000):
 
     divisor = divisor + 2
 
-print(result)
+print(format(result, '.60g'))
