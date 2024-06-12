@@ -1,5 +1,3 @@
-import decimal
-
 divisor = 1
 result = 0
 

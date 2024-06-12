@@ -1,5 +1,5 @@
-#include <stdio.h>
-
+#include <iostream>
+using namespace std;
 
 int main() {
     double divisor = 1;
@@ -18,5 +18,7 @@ int main() {
 
             divisor += 2;
     }
-    printf("%0.100f\n", result);
+    cout.precision(50);
+    cout << result;
+    return 0;
 } 
